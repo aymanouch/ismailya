@@ -1,0 +1,196 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+h1,h2{
+    font-family: 'Anton', sans-serif;
+}
+h3,h4{
+    font-family: 'Josefin Sans', sans-serif;
+}
+p,a{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+nav {
+    padding:2rem 0;
+}
+nav ul#menu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+nav ul#menu li:nth-child(2), nav ul#menu li:nth-child(3) {
+   justify-self: end;
+}
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    height:100vh;
+}
+header > div{
+    width:100%;
+    height:100%;
+}
+header > div.left-box{
+    padding-left:2rem;
+}
+header > div.left-box h1{
+    font-size: 8rem;
+}
+header > div.left-box h4{
+    font-weight:100;
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom:2rem;
+}
+header > div.left-box p{
+    font-size: 1.3rem;
+    margin-bottom:2rem;
+    line-height: 2rem;
+}
+header > div.left-box button{
+    outline: none;
+    border:none;
+    background:#000;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+header > div.left-box button:hover{
+    background:#2e2e2e;
+}
+header > div.left-box button a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    padding:1rem 2rem;
+    text-decoration: none;
+    color:#fff;
+}
+#about{
+    padding:2rem 0;
+    text-align: center;
+}
+#about h2, #service h2, #contact h2{
+    margin:2rem 0;
+    font-size:3rem;
+    text-align: center;
+}
+#service{
+    padding-top:2rem;
+    padding-bottom:4rem;
+}
+#service ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    gap:8rem;
+}
+#service ul li h3{
+    margin:0 0 1rem 0;
+    text-align: center;
+}
+#service ul li p{
+    line-height: 1.5rem;
+}
+#contact {
+    background:#000;
+    color:#fff;
+    padding-top:2rem;
+   
+}
+#contact h2{
+    margin-bottom:2rem;
+}
+#contact form{
+    padding:2rem 0;
+    text-align: center;
+}
+#contact form input[type="email"]{
+    padding:.5rem 1rem;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    outline:none;
+    border:none;
+    width:30%;
+}
+#contact form input[type="submit"]{
+    padding:.5rem 1rem;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    outline:none;
+    border:none;
+    background:#fff;
+    text-transform: uppercase;
+}
+footer{
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    background: #000;
+    color:#fff;
+}
+footer .gridbox{
+    grid-template-columns: auto auto;
+    display:grid;
+    justify-content: space-between;
+    padding:0 10rem;
+}
+footer .gridbox ul{
+    list-style: none;
+}
+footer .copyright{
+  text-align: center;
+  margin-top:4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul#menu{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    header{
+        display: block;
+        height: auto;
+    }
+    header > div.left-box h1{
+        font-size: 4rem;
+    }
+    header > div.right-box{
+        width: 100%;
+        margin:2rem 0;
+    }
+    #service ul{
+        grid-template-columns: auto;
+        gap: 2rem;
+    }
+    #contact form input{
+        display: block;
+    }
+    #contact form input[type="email"]{
+        width: 90%;
+        margin-bottom:1rem;
+    }
+    footer .gridbox{
+        display: block;
+        padding:0;
+    }
+  }
